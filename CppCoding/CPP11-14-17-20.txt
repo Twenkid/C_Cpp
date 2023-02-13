@@ -1,0 +1,68 @@
+//#include "stdafx.h"
+/*
+#include "stdafx.h"
+#include <iostream>
+//#include <stdio>
+#include <vector>
+#include <thread>
+#include <future> //async, launch C++11
+//https://github.com/AnthonyCalandra/modern-cpp-features
+
+using namespace std;
+
+/*
+http://cpptruths.blogspot.com/2011/10/multi-dimensional-arrays-in-c11.html
+
+It all started with a simple question of how to define a multi-dimensional std::array. It is a great example of deceptively simple things. Are the following the two arrays identical except that one is native and the other one is std::array?
+
+int native[3][4];
+std::array<std::array<int, 3>, 4> arr;
+
+No! They are not. In fact, arr is more like an int[4][3]. Note the difference in the array subscripts. The native array is an array of 3 elements where every element is itself an array of 4 integers. 3 rows and 4 columns. If you want a std::array with the same layout, what you really need is:
+
+std::array<std::array<int, 4>, 3> arr;
+*/
+
+/*
+
+#ifndef CPP11_DEF
+namespace CPP11 {
+
+
+	template <typename T>
+	int CountTwos(const T& container) {
+		return std::count_if(std::begin(container), std::end(container), [](int item) {
+			return item == 2;
+		});
+	}
+
+	void beginend() {
+		cout << "beginend" << endl;
+		std::vector<int> vec = { 2, 2, 43, 435, 4543, 534 };
+		int arr[8] = { 2, 43, 45, 435, 32, 32, 32, 32 };
+		auto a = CountTwos(vec); // 2
+		auto b = CountTwos(arr);  // 1
+		cout << a << endl; //
+		cout << b << endl;
+	}
+
+	int foo() {
+		// Do something here, then return the result.
+		return 1000;
+	}
+
+	void async() {
+		auto handle = std::async(std::launch::async, foo);  // create an async task
+		auto result = handle.get();  // wait for the result
+		cout << result << endl;
+	}
+
+	void run() {
+		beginend();
+		async();
+	}
+}
+
+#define CPP11_DEF 1
+#endif
+*/
