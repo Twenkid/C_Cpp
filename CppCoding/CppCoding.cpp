@@ -23,13 +23,16 @@
 #include <complex> //5-7-2019
 
 //Exercises in Modern C++
-// Collected and Compiled by Twenkid from various sources
+//Collected and Compiled by Twenkid from various sources
+//Github: #1r-2-2023+
 //#!? If they are in the headers or source directory: Compiled twice
 //Already defined, redefined symbols? Why? #pragma once, #ifndef ... 
 //Either if moved to the header Files or Source Files? 
 //If removed from "include -- also error, can't find them. Exterm? 
 //#18-1-2023
 //Overall -- good fix/debug session and up-learning of concepts, templates; review the code again! 2:08
+
+//Change python( ... string path = "C:\\PY\\tk\\tk.py";  to a path to the desired Py script
 
 #ifdef TEMPLATES_ETC
 #include "templates.h" //#27-12-2022
